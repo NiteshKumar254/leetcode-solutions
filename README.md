@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0128-longest-consecutive-sequence) |
 | [0136-single-number](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0136-single-number) |
+| [0169-majority-element](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0229-majority-element-ii) |
 | [0283-move-zeroes](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0283-move-zeroes) |
 | [0485-max-consecutive-ones](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0485-max-consecutive-ones) |
@@ -33,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0001-two-sum) |
 | [0073-set-matrix-zeroes](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0073-set-matrix-zeroes) |
 | [0128-longest-consecutive-sequence](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0128-longest-consecutive-sequence) |
+| [0169-majority-element](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0229-majority-element-ii) |
 | [0560-subarray-sum-equals-k](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0560-subarray-sum-equals-k) |
 ## Dynamic Programming
@@ -60,9 +62,15 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0229-majority-element-ii) |
 ## Counting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0229-majority-element-ii) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0169-majority-element) |
 <!---LeetCode Topics End-->
