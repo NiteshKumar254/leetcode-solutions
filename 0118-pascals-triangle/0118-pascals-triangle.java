@@ -1,27 +1,30 @@
 class Solution {
     public List<List<Integer>> generate(int numRows) {
 
-        List<List<Integer>> ans= new ArrayList<>();
+        List<List<Integer>> list = new ArrayList<>();
 
-        for(int i=0; i<numRows; i++){
-            List<Integer> temp= new ArrayList<>();
 
-            for(int j=0; j<=i;j++){
-                temp.add(findComb(i,j));
-
-            }
-            ans.add(temp);
+        for(int i=1; i<=numRows; i++){
+            list.add(rowdata(i));
         }
-        return  ans;
-    }
+        return list;
         
-        public static int findComb(int n, int r){
-        int ans=1;
-        for(int i=0;i<r; i++){
-           ans=ans*(n-i);
-           ans=ans/(i+1);
-        }
-        return ans;
     }
+    public static List<Integer> rowdata(int n){
 
+        List<Integer> list= new ArrayList<>();
+        int ans=1;
+        list.add(ans);
+
+         for(int i=1; i<n ; i++){
+
+            ans=ans*(n-i)/i;
+             list.add(ans);
+
+         }
+         return list;
+        
+ 
+
+    }
 }
