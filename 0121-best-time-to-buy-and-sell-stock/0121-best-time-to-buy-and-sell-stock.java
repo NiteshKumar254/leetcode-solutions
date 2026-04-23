@@ -3,16 +3,23 @@ class Solution {
 
         int currp=0;
         int maxp=0;
-        int smallest=prices[0];
+        int min=prices[0];
 
-        for(int i: prices){
-            currp=i-smallest;
-            smallest=Math.min(smallest,i);
-            maxp=Math.max(currp,maxp);
-        
-        }
+         for(int i=1; i<prices.length ; i++){
+    
+          currp=prices[i]-min;
+          maxp=Math.max(currp,maxp);
 
-        return maxp;
+          min= Math.min(min,prices[i]);
+
+
+
+
+         }
+
+         return maxp;
+
+
         
     }
 }
