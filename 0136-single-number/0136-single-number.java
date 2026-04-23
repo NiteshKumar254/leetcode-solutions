@@ -1,13 +1,12 @@
 class Solution {
     public int singleNumber(int[] nums) {
 
-        int num=0;
+        int bit=0;
 
-        for(int i : nums){
-            num^=i;
+        for (int i: nums){
+            bit^=i;
         }
-
-        return num;
-        
+  
+      return bit;  
     }
 }
