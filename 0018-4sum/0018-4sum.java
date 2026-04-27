@@ -1,34 +1,73 @@
 class Solution {
     public List<List<Integer>> fourSum(int[] nums, int target) {
+        
+    List<List<Integer>> lt = new ArrayList<>();
 
-        Set<List<Integer>> set = new HashSet<>();
+    Arrays.sort(nums);
 
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = i + 1; j < nums.length; j++) {
+    for(int i=0; i<nums.length ; i++){
 
-                Set<Long> st = new HashSet<>();
 
-                for (int k = j + 1; k < nums.length; k++) {
+        if(i>0 && nums[i]==nums[i-1]) {
+            continue;
 
-                    long sum3 = (long) nums[i] + nums[j] + nums[k];
-                    long fourth = (long) target - sum3;
-
-                    if (st.contains(fourth)) {
-                        List<Integer> lt = new ArrayList<>();
-                        lt.add(nums[i]);
-                        lt.add(nums[j]);
-                        lt.add(nums[k]);
-                        lt.add((int) fourth); // safe cast (original nums are int)
-
-                        Collections.sort(lt);
-                        set.add(lt);
-                    }
-
-                    st.add((long) nums[k]);
-                }
-            }
         }
 
-        return new ArrayList<>(set);
+        for(int j=i+1 ; j<nums.length ; j++){
+            if(j>i+1 && nums[j]==nums[j-1])
+            {
+                continue;
+            }
+            int left=j+1;
+            int right= nums.length-1;
+
+            while(left<right){
+                   long sum = (long) nums[i] + nums[j] + nums[left] + nums[right];
+                if(sum >target){
+                    right--;
+                }
+                else if ( sum < target  ){
+                    left++;
+                }
+                else {
+                    ArrayList<Integer> list= new ArrayList<>();
+                    list.add(nums[i]);
+                    list.add(nums[j]);
+                    list.add(nums[left]);
+                    list.add(nums[right]);
+             
+                   
+                   lt.add(list);
+
+                   left++;
+                   right--;
+
+                   while (left<right && nums[right]==nums[right+1]){
+                          right--;
+
+
+                   }
+
+                   while (left<right && nums[left]==nums[left-1]){
+                    left++;
+                   }
+
+
+
+
+                }
+            }
+
+
+        }
+
+        
+    }
+
+    return lt;
+
+
+
+
     }
 }
