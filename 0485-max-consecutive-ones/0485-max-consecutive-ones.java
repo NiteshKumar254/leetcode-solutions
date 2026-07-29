@@ -8,7 +8,13 @@ class Solution {
 
          if(i==1){
             curr_count++;
-              max_count= Math.max(curr_count, max_count);
+
+            if( curr_count>max_count){
+                max_count=curr_count;
+
+
+            }
+             
         
          }
 
