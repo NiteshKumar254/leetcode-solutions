@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0048-rotate-image) |
 | [0189-rotate-array](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0189-rotate-array) |
 | [0268-missing-number](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0268-missing-number) |
+| [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 ## Array
 |  |
 | ------- |
@@ -112,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
+| [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 ## Sliding Window
 |  |
 | ------- |
@@ -120,4 +122,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
+## Greedy
+|  |
+| ------- |
+| [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 <!---LeetCode Topics End-->
