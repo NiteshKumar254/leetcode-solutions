@@ -1,58 +1,66 @@
 class Solution {
     public List<Integer> majorityElement(int[] nums) {
 
+        List <Integer> list= new ArrayList<>();
 
-        int count1=0;
-        int elem1=0;
-        int count2=0;
-        int elem2=0;
+        int req= nums.length/3;
 
-        for(int i: nums){
+          int elem1 =Integer.MIN_VALUE;
+          int count1=0;
 
-            if (count1==0  && i!=elem2  ){
-                count1=1;
-                elem1=i;
-            }
+          int elem2= Integer.MIN_VALUE;
+          int count2=0;
 
-            else if (count2==0 && i!=elem1){
-                count2=1;
-                elem2=i;
-            }
-            else if (i==elem1){
-                count1++;
-            }
-            else if (i==elem2){
-                count2++;
-            }
-            else {
-                count1--;
-                count2--;
-            }
-        }
-        count1=0;
-        count2=0;
+          for(int i: nums){
 
+           if(count1==0 && i !=elem2 ){
+ 
+               count1++;
+               elem1= i;
 
-      for (int i: nums){
-        if(i==elem1){
-            count1++;
+           }
 
-        }
-        else if(i==elem2){
+           else if ( count2==0 && i!=elem1){
+
             count2++;
+            elem2=i;
+
+           }
+
+           else if (i==elem1){
+            count1++;
+           }
+           else if (i==elem2){
+            count2++;
+           }
+
+           else{
+            count1--;
+            count2--;
+           }
+
+
+          }
+
+         count1 = 0;
+        count2 = 0;
+
+        for (int i : nums) {
+            if (i == elem1)
+                count1++;
+            else if (i == elem2)
+                count2++;
         }
-      }
-      List<Integer> list= new ArrayList<>();
 
-      if (count1> nums.length/3){
-        list.add(elem1);
-      }
+        if (count1 > req)
+            list.add(elem1);
 
-   if (count2> nums.length/3){
-    list.add(elem2);
-   }
+        if (count2 > req)
+            list.add(elem2);
 
-   return list;
+        return list;
+
+
 
         
     }
