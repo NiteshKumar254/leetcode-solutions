@@ -126,4 +126,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
+## Boyer–Moore Majority Vote Algorithm
+|  |
+| ------- |
+| [0229-majority-element-ii](https://github.com/NiteshKumar254/leetcode-solutions/tree/master/0229-majority-element-ii) |
 <!---LeetCode Topics End-->
